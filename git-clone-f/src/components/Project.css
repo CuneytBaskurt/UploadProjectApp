@@ -1,0 +1,45 @@
+body{
+
+    background-color:rgb(6, 42, 49);
+    margin: 0;
+    overflow: hidden;
+
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .login-box {
+    width: 400px;
+    height: auto; /* Yüksekliği otomatik ayarla */
+    background-color: rgba(16, 54, 9, 0.8); /* Saydam gri kutu */
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Dikey düzen için */
+    align-items: center; /* Ortala */
+}
+
+  .input-field {
+    width: 100%; /* Genişlik %100 yap */
+    padding: 10px;
+    margin: 10px 0; /* Üst ve alt boşluk ekle */
+    border: 1px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kavisli kenarlar */
+}
+
+
+.header-options {
+    position: absolute; /* Mutlak konumlandırma */
+    top: 10px; /* Üstten mesafe */
+    right: 10px; /* Sağdan mesafe */
+    display: flex; /* Yana doğru düzen */
+    gap: 10px; /* Seçenekler arasında boşluk */
+    z-index: 2; /* Butonların üstte görünmesi için */
+  }

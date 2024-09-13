@@ -1,0 +1,211 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden; /* Taşmayı gizlemek için */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .login-box {
+    width: 400px;
+    height: auto; /* Yüksekliği otomatik ayarla */
+    background-color: rgba(55, 6, 90, 0.8); /* Saydam gri kutu */
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Dikey düzen için */
+    align-items: center; /* Ortala */
+}
+
+  .input-field {
+    width: 100%; /* Genişlik %100 yap */
+    padding: 10px;
+    margin: 10px 0; /* Üst ve alt boşluk ekle */
+    border: 1px solid #ccc; /* Kenar rengi */
+    border-radius: 5px; /* Kavisli kenarlar */
+}
+
+.start-button {
+    background-color: #0050ec;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: 0.1s ease;
+    border-width: 0;
+    box-shadow: 1px 5px 0 0 #0e285d;
+  }
+  
+  .start-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 1px 9px 0 0 #0e285d;
+  }
+  
+  .start-button:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0 0 #0e285d;
+  }
+
+  .header-options {
+    position: absolute; /* Mutlak konumlandırma */
+    top: 10px; /* Üstten mesafe */
+    right: 10px; /* Sağdan mesafe */
+    display: flex; /* Yana doğru düzen */
+    gap: 10px; /* Seçenekler arasında boşluk */
+    z-index: 2; /* Butonların üstte görünmesi için */
+  }
+
+ /* From Uiverse.io by cssbuttons-io */ 
+.register-button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  
+  .register-button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .register-button:hover {
+    color: #fff;
+  }
+  
+  .register-button:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .register-button:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .register-button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+
+  .register-button-2 {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 0; /* Marjı sıfırlayın */
+    position: absolute; /* Mutlak konumlandırma */
+    top: 20px; /* Üstten mesafe */
+    left: -1300px; /* Soldan mesafe */
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+  
+  .register-button-2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  .register-button-2:hover {
+    color: #fff;
+  }
+  
+  .register-button-2:before {
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  
+  .register-button-2:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .register-button-2:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+  }
+  
+  
+  
+  .matrix-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  @keyframes matrix {
+    0% {
+      transform: translateY(-100%); /* Yukarıdan başla */
+    }
+    100% {
+      transform: translateY(200vh); /* Ekranın altına kadar kaydır */
+    }
+  }
+  
+  .matrix-text {
+    transform: rotate(270deg); /* Dikey yazı için döndür */
+    color: #0f0; /* Matrix yeşili */
+    font-family: monospace;
+    font-size: 10px;
+    position: absolute;
+    top: -100%; /* Yukarıda başlat */
+    animation: matrix 5s linear infinite;
+    
+    white-space: normal; /* Yazıların normal akışta görünmesini sağlar */
+  }
+  
+  .matrix-text:nth-child(odd) {
+    left: 60%; /* Sol kenara yakın yerleştir */
+  }
+  
+  .matrix-text:nth-child(even) {
+    left: 30%; /* Farklı konumlandırmalarla dikey düzen */
+  }
+  
+  
