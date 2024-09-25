@@ -2,6 +2,7 @@ UploadProjectApp
 
 This project is developed using Java Spring Boot and React.js. It allows users to upload files, and the uploaded files are processed and stored on the server.
 
+
 Features
 
 .Upload files through a React frontend.
@@ -9,6 +10,7 @@ Features
 .Backend API built with Java Spring Boot for file handling and storage.
 
 .Integration with a database to store file metadata.
+
 
 Technologies Used
 
@@ -21,6 +23,7 @@ Technologies Used
 .Spring Data JPA: Database integration
 
 .CSS/HTML/JavaScript: Frontend styling and interactivity
+
 
 How to Run the Project
 
